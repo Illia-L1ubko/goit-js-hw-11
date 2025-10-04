@@ -23,8 +23,8 @@ form.addEventListener("submit", async (event) => {
     return;
   }
 
-  clearGallery();
-  showLoader();
+    clearGallery();
+    showLoader();
 
   try {
     const data = await getImagesByQuery(query);
@@ -47,5 +47,6 @@ form.addEventListener("submit", async (event) => {
     console.error(error);
   } finally {
     hideLoader();
+    form.reset();
   }
 });

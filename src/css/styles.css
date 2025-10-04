@@ -76,6 +76,9 @@ button{
   animation: mltShdSpin 1.7s infinite ease, round 1.7s infinite ease;
 }
 
+.hidden {
+  display: none;
+}
 @keyframes mltShdSpin {
   0% {
     box-shadow: 0 -0.83em 0 -0.4em,
