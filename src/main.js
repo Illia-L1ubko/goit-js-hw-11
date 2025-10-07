@@ -6,6 +6,8 @@ import {
   hideLoader,
 } from "./js/render-functions.js";
 
+hideLoader();
+
 import iziToast from "izitoast";
 import "izitoast/dist/css/iziToast.min.css";
 
@@ -22,7 +24,6 @@ form.addEventListener("submit", async (event) => {
     });
     return;
   }
-
     clearGallery();
     showLoader();
 
